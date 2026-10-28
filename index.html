@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajah Kuliner & Wisata Nusantara - Tugas Akhir Belajar Dasar Pemrograman Web Dicoding Akademi">
+  <meta name="author" content="Dicoding Web Student">
+  <title>Jelajah Kuliner Nusantara | Web Submission Dicoding</title>
+
+  <!-- External Stylesheet (Path Relatif) -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HEADER ELEMENT (<header>) - Wajib Submission Dicoding
+       ========================================================================= -->
+  <header>
+    <div class="hero-banner" style="background-image: url('assets/images/hero.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <!-- TEPAT 1 ELEMEN <h1> SESUAI KRITERIA BINTANG 5 -->
+        <h1>Jelajah Kuliner Nusantara</h1>
+        <p>Menjelajahi Kekayaan Rasa, Warisan Tradisi, dan Keanekaragaman Makanan Khas Indonesia</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. NAVIGATION ELEMENT (<nav>) - Wajib Submission Dicoding
+       ========================================================================= -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span>🍲</span> KulinerNusantara
+      </a>
+
+      <!-- Menu Navigasi (Elemen <nav> Wajib Memiliki Anchor <a> Ke Profil Dicoding) -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#kuliner" class="nav-link">Kuliner Khas</a></li>
+        <li><a href="#biodata" class="nav-link">Biodata</a></li>
+        <!-- LINK WAJIB SUBMISSION: Anchor Mengarah Ke Profil Dicoding Peserta -->
+        <li>
+          <a href="https://www.dicoding.com/users/bilker" target="_blank" rel="noopener noreferrer" class="nav-link dicoding-profile" id="dicodingProfileLink">
+            Profil Dicoding
+          </a>
+        </li>
+      </ul>
+
+      <!-- Action Buttons (Dark Mode & Mobile Toggle) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Tema Gelap/Terang">🌙</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi" aria-controls="navMenu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       3. MAIN ELEMENT (<main>) - Wajib Submission Dicoding (Flexbox Layout)
+       ========================================================================= -->
+  <main id="beranda">
+
+    <!-- Konten Utama: Daftar Artikel (<article>) -->
+    <div class="content-wrapper">
+      <h2 class="section-title" id="kuliner">Koleksi Hidangan Terpopuler</h2>
+
+      <!-- ARTIKEL 1: RENDANG -->
+      <article id="rendang">
+        <div class="article-image-container">
+          <img src="assets/images/rendang.jpg" alt="Sajian Rendang Daging Sapi Khas Minangkabau" loading="lazy">
+          <span class="article-badge">Sumatera Barat</span>
+        </div>
+        <div class="article-body">
+          <h2>Rendang Daging Sapi Minangkabau</h2>
+          <div class="article-meta">
+            <span>📅 21 Juli 2026</span>
+            <span>⏱️ 5 Menit Baca</span>
+            <span>⭐ Makanan Terenak Dunia</span>
+          </div>
+          <p class="article-text">
+            Rendang adalah masakan olahan daging sapi khas Minangkabau, Sumatera Barat yang dimasak menggunakan santan kelapa pekat dan aneka rempah-rempah alami selama berjam-jam. Proses memasak yang lama menghasilkan daging yang empuk bercitarasa gurih, pedas, dan kaya rempah.
+          </p>
+
+          <h3>Bumbu & Rempah Utama:</h3>
+          <ul>
+            <li>Santan kelapa murni & serundeng kelapa sangrai</li>
+            <li>Cabai merah keriting, bawang merah, bawang putih</li>
+            <li>Lengkuas, jahe, kunyit, dan daun jeruk purut</li>
+            <li>Asam kandis & serai yang dimemarkan</li>
+          </ul>
+
+          <div class="article-footer">
+            <button class="like-btn" aria-label="Sukai artikel Rendang">
+              <span class="like-icon">🤍</span> Sukai Artikel (<span class="like-count">128</span>)
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTIKEL 2: GUDEG -->
+      <article id="gudeg">
+        <div class="article-image-container">
+          <img src="assets/images/gudeg.jpg" alt="Hidangan Gudeg Khas Yogyakarta" loading="lazy">
+          <span class="article-badge">DI Yogyakarta</span>
+        </div>
+        <div class="article-body">
+          <h2>Gudeg Khas Yogyakarta</h2>
+          <div class="article-meta">
+            <span>📅 21 Juli 2026</span>
+            <span>⏱️ 4 Menit Baca</span>
+            <span>🍯 Manis & Gurih</span>
+          </div>
+          <p class="article-text">
+            Gudeg adalah makanan tradisional khas Yogyakarta dan Jawa Tengah yang terbuat dari nangka muda (tewel) yang dimasak bersama santan dan daun jati untuk memberikan warna cokelat keemasan yang alami. Gudeg disajikan bersama nasi hangat, ayam kampung, telur bacem, dan krecek pedas.
+          </p>
+
+          <h3>Pelengkap Cita Rasa Gudeg:</h3>
+          <ul>
+            <li>Sambal goreng krecek gurih pedas</li>
+            <li>Ayam opor suwir khas kota Jogja</li>
+            <li>Telur bacem berbumbu manis gula jawa</li>
+            <li>Tahu & tempe bacem lembut</li>
+          </ul>
+
+          <div class="article-footer">
+            <button class="like-btn" aria-label="Sukai artikel Gudeg">
+              <span class="like-icon">🤍</span> Sukai Artikel (<span class="like-count">94</span>)
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTIKEL 3: SOTO LAMONGAN -->
+      <article id="soto">
+        <div class="article-image-container">
+          <img src="assets/images/soto.jpg" alt="Mangkok Soto Ayam Khas Lamongan" loading="lazy">
+          <span class="article-badge">Jawa Timur</span>
+        </div>
+        <div class="article-body">
+          <h2>Soto Ayam Khas Lamongan</h2>
+          <div class="article-meta">
+            <span>📅 21 Juli 2026</span>
+            <span>⏱️ 3 Menit Baca</span>
+            <span>🍋 Segar & Gurih Koya</span>
+          </div>
+          <p class="article-text">
+            Soto Lamongan memiliki keunikan rasa yang berbeda dari soto ayam pada umumnya berkat taburan bubuk koya (kerupuk udang dan bawang putih goreng yang dihaluskan). Kuah kuningnya yang bening nan segar terbuat dari kaldu ayam asli dengan aroma daun jeruk dan perasan jeruk nipis.
+          </p>
+
+          <h3>Keistimewaan Soto Lamongan:</h3>
+          <ul>
+            <li>Bubuk koya gurih melimpah</li>
+            <li>Kuah rempah kunyit & daun salam yang aromatik</li>
+            <li>Irisan daging ayam suwir & telur rebus</li>
+            <li>Pelengkap biun, tauge segar, dan seledri</li>
+          </ul>
+
+          <div class="article-footer">
+            <button class="like-btn" aria-label="Sukai artikel Soto Lamongan">
+              <span class="like-icon">🤍</span> Sukai Artikel (<span class="like-count">115</span>)
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- =======================================================================
+         4. ASIDE ELEMENT (<aside>) - Wajib Submission Dicoding
+         ======================================================================= -->
+    <aside id="biodata">
+      <div class="aside-header">
+        <!-- ELEMEN <img> WAJIB DI DALAM ELEMEN <aside> -->
+        <figure class="profile-figure">
+          <img src="assets/images/profile.jpg" alt="Foto Profil Penulis Website Dicoding" class="aside-avatar">
+        </figure>
+        <h2>Penulis Website</h2>
+        <p class="aside-subtitle">Web Developer & Culinary Enthusiast</p>
+      </div>
+
+      <p class="aside-bio">
+        Halo! Saya seorang siswa kelas Pemrograman Web Dicoding yang antusias mengembangkan aplikasi web modern, responsif, dan mengedepankan pengalaman pengguna.
+      </p>
+
+      <!-- Biodata Penulis -->
+      <table class="info-table">
+        <tr>
+          <th>Nama</th>
+          <td>Billy Developer</td>
+        </tr>
+        <tr>
+          <th>Kota</th>
+          <td>Jakarta, Indonesia</td>
+        </tr>
+        <tr>
+          <th>Pekerjaan</th>
+          <td>Frontend Web Developer</td>
+        </tr>
+        <tr>
+          <th>Kelas</th>
+          <td>Belajar Dasar Web</td>
+        </tr>
+        <tr>
+          <th>Akademi</th>
+          <td>Dicoding Indonesia</td>
+        </tr>
+      </table>
+
+      <div class="social-links">
+        <a href="https://www.dicoding.com/users/bilker" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Profil Dicoding">🎓</a>
+        <a href="https://github.com/bilker29" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Profil GitHub Penulis">💻</a>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- =========================================================================
+       5. FOOTER ELEMENT (<footer>) - Wajib Submission Dicoding
+       ========================================================================= -->
+  <footer>
+    <p>&copy; <span id="currentYear">2026</span> <strong>KulinerNusantara</strong>. Dibuat dengan 🧡 untuk Tugas Akhir Kelas Dicoding Indonesia.</p>
+  </footer>
+
+  <!-- External JavaScript File (Path Relatif) -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
